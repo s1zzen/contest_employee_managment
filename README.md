@@ -34,7 +34,7 @@ pip install -r requirements.txt
 1. Клонируйте репозиторий:
 
 ```bash
-git clone [https://github.com/s1zzen/contest_employee_management.git](https://github.com/s1zzen/contest_employee_managment)
+git clone https://github.com/s1zzen/contest_employee_managment
 ```
 
 2. Перейдите в каталог проекта:
