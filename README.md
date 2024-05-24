@@ -13,6 +13,24 @@
 - **db**: Каталог с базой данных SQLite.
 - **output_files**: Каталог для сохранения экспортированных файлов.
 - **src**: Сам проект.
+### SQL
+```sql
+CREATE TABLE Branches (
+    branch_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    director_id INTEGER DEFAULT NULL,
+    FOREIGN KEY (director_id) REFERENCES Employees(employee_id)
+);
+
+CREATE TABLE Employees (
+    employee_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    position TEXT NOT NULL,
+    branch_id INTEGER,
+    FOREIGN KEY (branch_id) REFERENCES Branches(branch_id)
+);
+
+```
 
 ## Требования к установке
 
